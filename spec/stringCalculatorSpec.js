@@ -18,14 +18,14 @@ describe('string calculator', function () {
         let result = add('1\n2,3');
         expect(result).toEqual(6);
     });
-    /*  it('should read a change in delimiter, where the beginning of the string will contain a separate line ', function () {
+    it('should read a change in delimiter, where the beginning of the string will contain a separate line ', function () {
         let result = add('//;\n1;2');
         expect(result).toEqual(3);
     });
-     it('should throw an exception if negative number is passed as well as the negative number', function () {
-         let result = add('-1,1');
-         expect(result).toBe( 'negative number (-1) not allowed');
-     }); 
- */
+    it('should throw an exception if negative number is passed as well as the negative number', function () {
+        let result = add('-1,1');
+        expect(result).toBe('negative number (-1) not allowed');
+    });
+
 
 })
